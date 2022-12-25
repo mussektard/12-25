@@ -1,0 +1,39 @@
+# def solution(numlist, n):
+#     answer = []
+#     for i in range(len(numlist)):
+#         d = n - numlist[i]
+#         if d < 0:
+#             d = -d
+#         numlist[i] = [d, numlist[i]]
+#     numlist.sort()
+#     print(numlist)
+#     for i in range(len(numlist)):
+#         if numlist[i - 1][0] == numlist[i][0] and numlist[i - 1][1] < numlist[i][1]:
+#             answer.insert(i - 1, numlist[i][1])
+#         else:
+#             answer.append(numlist[i][1])
+#     return answer
+# print(solution([10000, 20, 36, 47,40,6,10,7000],30))
+# def solution(num):
+#     answer = ''
+#     if num & 2 == 0:
+#         return 'Even'
+#     else:
+#         return 'Odd'
+# num = 3
+# print(solution(num))
+# def solution(polynomial):
+#     answer = ''
+#     in_x = []
+#     not_x = []
+#     polynomial = polynomial.split()
+#     for i in polynomial:
+#         if 'x' in i:
+#             in_x.append(i)
+#         elif i.isdigit():
+#             not_x.append(i)
+#     print(in_x)
+#     print(not_x)
+#     return answer
+# p = '3x + 7 + x'
+# print(solution(p))
